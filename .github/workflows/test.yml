@@ -55,7 +55,7 @@ jobs:
 
       - name: Upload Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ runner.os }} - Desktop Browsers Tests Report
           path: "GUI_Web/allure-reports/*_AllureReport.html"
@@ -106,7 +106,7 @@ jobs:
 
       - name: Upload Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ runner.os }} - Desktop Browsers Tests Report
           path: "GUI_Web_Basic/allure-reports/*_AllureReport.html"
@@ -157,7 +157,7 @@ jobs:
 
       - name: Upload Report as Pipeline Artifact
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: ${{ runner.os }} - Desktop Browsers Tests Report
           path: "GUI_Web_Cucumber/allure-reports/*_AllureReport.html"
